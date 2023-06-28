@@ -23,16 +23,7 @@ class NoteList extends Component{
                );
             });
         };
-        // const notelistReturn = notes => {
-        //     return notes.map((note,index) => {
-        //         return (
-        //             <div key={index}>
-        //                 <div>{note.title}</div>
-        //                 <div>{note.text}</div>
-        //             </div>
-        //         );
-        //     });
-        // };
+        
 
         return(
             <div id="note-list-container">

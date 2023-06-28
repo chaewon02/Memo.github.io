@@ -65,16 +65,7 @@ class App extends Component {
       notes : [...this.state.notes, {title, text, date: new Date(), edited: false}]
     });
   };
-  changeNote = (title,text,number) =>{
-    this.setState({
-      notes : this.state.notes.map((note,index)=>(index===number ? {...note,title,text,edited:true} : note))
-    });
-  };
-  deleteNote = number =>{
-    this.setState({
-      notes : this.state.notes.filter((note,index)=>(index===number ? false : true))
-    });
-  };
+
   
   
   render(){
@@ -98,8 +89,6 @@ class App extends Component {
             </SearchBar>
           <NoteList 
             notes = {this.state.notes}
-            changeNote={this.changeNote} 
-            deleteNote={this.deleteNote} 
             />
         </AppDiv>
       </Container>
