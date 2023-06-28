@@ -89,7 +89,7 @@ class App extends Component {
         <AppDiv>
           <SearchBar>
             <div>
-              <span>채니의 메모장</span>
+              <span>chaewon의 메모장</span>
             </div>
             <div>
               <button onClick={this.toogleModal}>새 메모 작성</button>
